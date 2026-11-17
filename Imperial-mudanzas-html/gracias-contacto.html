@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Enviado - Imperial de Mudanzas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gracias-page {
+            padding-top: 150px;
+            min-height: 80vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gracias-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .icono-exito {
+            font-size: 5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            animation: bounce 1s ease;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        h1 {
+            color: #1a237e;
+            margin-bottom: 15px;
+        }
+        
+        .nombre-cliente {
+            color: #ffd700;
+            font-weight: 700;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .tiempo-respuesta {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        
+        .tiempo-respuesta i {
+            color: #ffd700;
+            margin-right: 8px;
+        }
+        
+        .acciones-rapidas {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn-accion {
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-wsp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-wsp:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+        }
+        
+        .btn-inicio {
+            background: #1a237e;
+            color: white;
+        }
+        
+        .btn-inicio:hover {
+            background: #283593;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .gracias-container {
+                padding: 30px 20px;
+                margin: 0 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .acciones-rapidas {
+                flex-direction: column;
+            }
+            
+            .btn-accion {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gracias-page">
+        <div class="gracias-container">
+            <div class="icono-exito">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            
+            <!-- Aquí el JS inyectará el nombre -->
+            <h1>¡Gracias por contactarnos<span id="saludo-nombre"></span>!</h1>
+            
+            <p>Hemos recibido tu mensaje correctamente.</p>
+            
+            <div class="tiempo-respuesta">
+                <i class="fas fa-clock"></i>
+                <strong>Tiempo de respuesta estimado:</strong> Menos de 24 horas hábiles
+            </div>
+            
+            <p>Mientras tanto, puedes:</p>
+            
+            <div class="acciones-rapidas">
+                <a href="https://wa.me/573045253625" target="_blank" class="btn-accion btn-wsp">
+                    <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                </a>
+                <a href="index.html" class="btn-accion btn-inicio">
+                    <i class="fas fa-home"></i> Volver al inicio
+                </a>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 0.9rem; color: #999;">
+                <i class="fas fa-envelope"></i> Te responderemos a: <strong id="email-cliente">tu correo</strong>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Recuperar nombre y correo que guardamos desde contacto.html
+        document.addEventListener('DOMContentLoaded', function() {
+            const nombre = localStorage.getItem('cliente_nombre');
+            const email = localStorage.getItem('cliente_email');
+            
+            if (nombre) {
+                document.getElementById('saludo-nombre').textContent = ', ' + nombre;
+            }
+            if (email) {
+                document.getElementById('email-cliente').textContent = email;
+            }
+        });
+    </script>
+</body>
+</html>

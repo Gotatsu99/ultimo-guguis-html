@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    
+    <!-- ======================================== -->
+    <!-- GOOGLE ANALYTICS -->
+    <!-- ======================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DJDTXFBBV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4DJDTXFBBV');
+    </script>
+
+    <!-- ======================================== -->
+    <!-- TÍTULO Y METADATOS SEO -->
+    <!-- ======================================== -->
+    <title>Imperial de Mudanzas y Transporte | Mudanzas en Bogotá y Colombia</title>
+    <meta name="description" content="Mudanzas en Bogotá, Medellín, Cali y toda Colombia. Más de 10 años de experiencia. Servicio estándar, confort y premium. Cotiza sin compromiso.">
+    <meta name="keywords" content="mudanzas, mudanzas bogotá, mudanzas colombia, mudanzas economicas, mudanzas residenciales, transporte de muebles, embalaje, imperial mudanzas">
+    <meta name="author" content="Imperial de Mudanzas">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="es-co">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-proyecto.web.app/"> 
+    <meta property="og:title" content="Imperial de Mudanzas | Mudanzas en Bogotá y Colombia">
+    <meta property="og:description" content="Más de 10 años de experiencia. Mudanzas residenciales, de oficina y servicios adicionales. Cotiza ahora sin compromiso.">
+    <meta property="og:image" content="https://tu-proyecto.web.app/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Imperial de Mudanzas">
+    
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Imperial de Mudanzas | Mudanzas en Bogotá y Colombia">
+    <meta name="twitter:description" content="Mudanzas profesionales en toda Colombia. Más de 10 años de experiencia.">
+    <meta name="twitter:image" content="https://tu-proyecto.web.app/images/twitter-image.jpg">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1a237e">
+    <meta name="theme-color" content="#1a237e">
+    
+    <!-- ESTILOS Y FUENTES -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ESTILOS ADICIONALES -->
+    <style>
+        .form-group { position: relative; margin-bottom: 20px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; box-sizing: border-box; }
+        .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .submit-btn:disabled:hover { transform: none; box-shadow: none; }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/index-fondo.jpeg');
+            background-size: cover; background-position: center; background-repeat: no-repeat;
+            display: flex; align-items: center; justify-content: center; text-align: center;
+            color: white; padding-top: 80px; position: relative; width: 100%;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5); z-index: 1;
+        }
+        .hero-content { max-width: 800px; padding: 2rem; z-index: 3; position: relative; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+        .hero h1 i { color: #ffd700; margin-right: 15px; }
+        .tagline { font-size: 1.5rem; margin-bottom: 1.5rem; color: #ffd700; font-weight: 300; }
+        .description { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; }
+        .btn { padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 10px; transition: all 0.3s; }
+        .btn-primary { background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%); color: #1a237e; }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255, 179, 0, 0.3); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: #1a237e; }
+        .hero-contact { margin-top: 2rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .hero-contact p { font-size: 1.1rem; }
+        .hero-contact i { color: #ffd700; margin-right: 10px; }
+
+        @media (max-width: 768px) {
+            .hero { background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/index-fondo-movil.jpg'); background-size: cover; background-position: center; min-height: 100vh; height: auto; padding: 100px 0 50px; }
+            .hero h1 { font-size: 2rem; line-height: 1.3; }
+            .hero h1 i { font-size: 1.8rem; display: block; margin-right: 0; margin-bottom: 10px; }
+            .tagline { font-size: 1.1rem; }
+            .description { font-size: 0.95rem; padding: 0 15px; }
+            .hero-buttons { flex-direction: column; gap: 10px; padding: 0 20px; }
+            .btn { width: 100%; padding: 12px 20px; font-size: 0.95rem; }
+            .hero-contact { flex-direction: column; gap: 10px; }
+            .hero-contact p { font-size: 0.9rem; }
+            body { font-size: 14px; }
+            .services-section-modern { padding: 40px 15px; }
+            .section-title { font-size: 1.8rem; }
+            .section-subtitle-modern { font-size: 0.95rem; padding: 0 10px; }
+            .services-grid-modern { grid-template-columns: 1fr; gap: 20px; }
+            .service-card-modern { margin: 0; }
+            .service-header h3 { font-size: 1.5rem; }
+            .service-description { font-size: 0.9rem; }
+            .service-features-modern li { font-size: 0.9rem; padding: 6px 0; }
+            .info-btn { width: 100%; padding: 12px; font-size: 0.9rem; }
+            .contact-section { padding: 40px 15px; }
+            .contact-container { grid-template-columns: 1fr; gap: 30px; padding: 0; }
+            .contact-info { padding: 0 10px; }
+            .contact-info h2 { font-size: 1.8rem; }
+            .contact-info h2 i { font-size: 1.8rem; }
+            .contact-subtitle { font-size: 1rem; }
+            .contact-info p { font-size: 0.9rem; }
+            .contact-details { margin-top: 20px; }
+            .contact-item { padding: 12px; margin-bottom: 10px; flex-direction: row; text-align: left; }
+            .contact-item i { font-size: 1.2rem; min-width: 30px; }
+            .contact-item h4 { font-size: 1rem; margin-bottom: 3px; }
+            .contact-item p { font-size: 0.85rem; word-break: break-word; }
+            .contact-form { padding: 20px 15px; margin: 0 10px; width: auto; }
+            .contact-form h3 { font-size: 1.5rem; margin-bottom: 20px; }
+            .form-group { margin-bottom: 12px; }
+            .form-group input, .form-group select, .form-group textarea { padding: 12px; font-size: 0.9rem; border-radius: 8px; width: 100%; box-sizing: border-box; }
+            .form-group textarea { min-height: 80px; }
+            .submit-btn { padding: 14px 20px; font-size: 1rem; width: 100%; margin-top: 10px; }
+            .submit-btn i { font-size: 1rem; }
+            .btn-primary[style*="margin-top: 50px"] { padding: 12px 25px; font-size: 0.95rem; width: 90%; margin-left: auto; margin-right: auto; display: block; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.6rem; }
+            .hero h1 i { font-size: 1.5rem; }
+            .tagline { font-size: 1rem; }
+            .contact-item { flex-direction: column; text-align: center; align-items: center; }
+            .contact-item i { margin-bottom: 5px; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; }
+            .footer-links ul { display: flex; flex-direction: column; align-items: center; }
+            .social-icons { justify-content: center; }
+        }
+        @media (min-width: 769px) and (max-width: 992px) {
+            .hero h1 { font-size: 2.5rem; }
+            .services-grid-modern { grid-template-columns: repeat(2, 1fr); }
+            .contact-container { grid-template-columns: 1fr; gap: 30px; }
+        }
+        .nav-item.active > a { color: #ffd700 !important; }
+    </style>
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- MENÚ DE NAVEGACIÓN ACTUALIZADO -->
+    <!-- ======================================== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo" style="margin-right: 40px;">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Imperial de Mudanzas" 
+                         style="height: 85px; width: auto; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s; border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;"
+                         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 24px rgba(255,215,0,0.4)';"
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.3)';">
+                </a>
+            </div>
+                            
+            <button class="mobile-menu-btn" onclick="abrirMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="miMenu">
+                <li class="nav-item active">
+                    <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                
+                <li class="nav-item has-submenu">
+                    <a href="javascript:void(0);" onclick="abrirSubmenu()">
+                        <i class="fas fa-boxes"></i> Servicios <i class="fas fa-chevron-down" id="iconoSubmenu"></i>
+                    </a>
+                    <ul class="submenu" id="submenuServicios">
+                        <li><a href="servicios/mudanza-estandar.html"><i class="fas fa-home"></i> Mudanza Estándar</a></li>
+                        <li><a href="servicios/mudanza-confort.html"><i class="fas fa-couch"></i> Mudanza Confort</a></li>
+                        <li><a href="servicios/mudanza-premium.html"><i class="fas fa-crown"></i> Mudanza Premium</a></li>
+                        <li class="submenu-divider"></li>
+                        <li><a href="servicios/servicios-adicionales.html"><i class="fas fa-plus-circle"></i> Servicios Adicionales</a></li>
+                        <li><a href="servicios/transporte-vehiculos.html"><i class="fas fa-truck-moving"></i> Transporte de Vehículos</a></li>
+                        <li><a href="servicios/paqueteria-local.html"><i class="fas fa-city"></i> Servicio de paquetería local</a></li>
+                        <li><a href="servicios/remodelacion-interiores.html"><i class="fas fa-tools"></i> Servicio de remodelación de interiores</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="nosotros.html"><i class="fas fa-building"></i> Nosotros</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="testimonios.html"><i class="fas fa-comment-alt"></i> Testimonios</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="galeria.html"><i class="fas fa-images"></i> Galería</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="nav-contact">
+                <a href="tel:3045253625" class="contact-phone">
+                    <i class="fas fa-phone"></i>
+                    <div class="phone-text">
+                        <span class="phone-label">Llama ya</span>
+                        <span class="phone-number">3045253625</span>
+                    </div>
+                </a>
+                <a href="index.html#contacto" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i> Cotizar
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-truck-moving"></i> IMPERIAL DE MUDANZAS Y TRANSPORTE</h1>
+            <p class="tagline">Experiencia que respalda, seguridad que garantiza</p>
+            <p class="description">Con más de una década en el sector, hemos perfeccionado cada aspecto de nuestro servicio para garantizar traslados eficientes, seguros y sin complicaciones.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> ¡Cotiza Ahora!
+                </a>
+                <a href="#servicios" class="btn btn-secondary">
+                    <i class="fas fa-boxes"></i> Nuestros Servicios
+                </a>
+            </div>
+            <div class="hero-contact">
+                <p><i class="fas fa-phone"></i> <strong>Llámanos:</strong> 3045253625</p>
+                <p><i class="fas fa-clock"></i> <strong>Disponibilidad:</strong> 24/7 para tu tranquilidad</p>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="services-section-modern">
+        <div class="services-container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle-modern">Soluciones completas de mudanza adaptadas a cada necesidad, con la garantía de más de 10 años de experiencia</p>
+            
+            <div class="services-grid-modern">
+                <!-- Mudanza Estándar -->
+                <div class="service-card-modern">
+                    <div class="service-header"><h3>Mudanza Estándar</h3></div>
+                    <div class="service-body">
+                        <p class="service-description">La solución perfecta para mudanzas residenciales y de oficina con relación calidad-precio ideal.</p>
+                        <ul class="service-features-modern">
+                            <li>Embalaje básico seguro</li>
+                            <li>Carga y descarga profesional</li>
+                            <li>Transporte especializado</li>
+                            <li>Ubicación y acomodo básico</li>
+                            <li>Coordinación personalizada</li>
+                        </ul>
+                        <a href="servicios/mudanza-estandar.html" class="info-btn">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Mudanza Confort -->
+                <div class="service-card-modern">
+                    <div class="service-header" style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);"><h3>Mudanza Confort</h3></div>
+                    <div class="service-body">
+                        <p class="service-description">Servicio completo para quienes buscan tranquilidad total durante su proceso de mudanza.</p>
+                        <ul class="service-features-modern">
+                            <li>Embalaje y protección avanzada</li>
+                            <li>Carga y descarga experta</li>
+                            <li>Transporte exclusivo y seguro</li>
+                            <li>Desembalaje y ubicación estratégica</li>
+                            <li>Asesoría personalizada completa</li>
+                        </ul>
+                        <div class="service-actions"><a href="servicios/mudanza-confort.html" class="info-btn">Más información</a></div>
+                    </div>
+                </div>
+
+                <!-- Mudanza Premium -->
+                <div class="service-card-modern">
+                    <div class="service-header" style="background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);"><h3>Mudanza Premium</h3></div>
+                    <div class="service-body">
+                        <p class="service-description">La experiencia más exclusiva con atención personalizada 24/7 y manejo de lujo de sus pertenencias.</p>
+                        <ul class="service-features-modern">
+                            <li>Embalaje especializado de alta gama</li>
+                            <li>Carga y descarga de lujo</li>
+                            <li>Transporte exclusivo con tecnología</li>
+                            <li>Desembalaje y organización total</li>
+                            <li>Asesor personal 24/7</li>
+                        </ul>
+                        <div class="service-actions"><a href="servicios/mudanza-premium.html" class="info-btn">Más información</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#contacto" class="btn-primary" style="padding: 12px 30px; font-size: 1rem; display: inline-block;">
+                    <i class="fas fa-calendar-check"></i> Solicitar Cotización
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2><i class="fas fa-headset"></i> Contáctanos</h2>
+                <p class="contact-subtitle">¿Necesita cotizar un servicio de mudanza?</p>
+                <p>Contáctanos para brindarte una asesoría personalizada y flexible.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div><h4>Teléfono</h4><p>3045253625</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><h4>Correo Electrónico</h4><p>Imperialdemudanzasytransporte@gmail.com</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-credit-card"></i>
+                        <div><h4>Métodos de Pago</h4><p>Efectivo | PSE | Transferencia</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Solicita tu Cotización</h3>
+                
+                <!-- FORMULARIO CONECTADO A WEB3FORMS -->
+                <form id="cotizacionForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                    
+                    <input type="hidden" name="access_key" value="b41874ce-1295-43ac-9988-379f64a1fa70">
+                    <input type="hidden" name="subject" value="Nueva cotización desde la página web (Inicio)">
+                    <!-- ⚠️ Cambia 'tu-proyecto.web.app' por tu dominio real de Firebase -->
+                    <input type="hidden" name="redirect" value="https://tu-proyecto.web.app/gracias.html">
+
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de contacto" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona el servicio</option>
+                            <option value="estandar">Mudanza Estándar</option>
+                            <option value="confort">Mudanza Confort</option>
+                            <option value="premium">Mudanza Premium</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Describe tus necesidades (origen, destino, fecha, etc.)" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" disabled>
+                        <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- FOOTER ACTUALIZADO -->
+    <!-- ======================================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none; margin-bottom: 20px;">
+                    <img src="images/logo.png" alt="Imperial de Mudanzas" style="height: 70px; width: auto; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.3); border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;">
+                    <span style="color: white; font-weight: 700; font-size: 1.4rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); letter-spacing: 1px; background: linear-gradient(135deg, #fff 0%, #ffd700 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">IMPERIAL DE MUDANZAS</span>
+                </a>
+                <p>Más de 10 años de experiencia en el sector</p>
+                <div style="margin-top: 20px;">
+                    <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i class="fas fa-phone" style="color: #ffd700;"></i> <span>3045253625</span></p>
+                    <p style="display: flex; align-items: center; gap: 10px; word-break: break-word;"><i class="fas fa-envelope" style="color: #ffd700; flex-shrink: 0;"></i><span style="font-size: 0.9rem;">Imperialdemudanzasytransporte@gmail.com</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="testimonios.html"><i class="fas fa-chevron-right"></i> Testimonios</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="servicios/mudanza-estandar.html"><i class="fas fa-chevron-right"></i> Mudanza Estándar</a></li>
+                    <li><a href="servicios/mudanza-confort.html"><i class="fas fa-chevron-right"></i> Mudanza Confort</a></li>
+                    <li><a href="servicios/mudanza-premium.html"><i class="fas fa-chevron-right"></i> Mudanza Premium</a></li>
+                    <li><a href="servicios/servicios-adicionales.html"><i class="fas fa-chevron-right"></i> Servicios Adicionales</a></li>
+                    <li><a href="servicios/transporte-vehiculos.html"><i class="fas fa-chevron-right"></i> Transporte de Vehículos</a></li>
+                    <li><a href="servicios/paqueteria-local.html"><i class="fas fa-chevron-right"></i> Servicio de paquetería local</a></li>
+                    <li><a href="servicios/remodelacion-interiores.html"><i class="fas fa-chevron-right"></i> Servicio de remodelación de interiores</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/573045253625" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/18BxR83M6Z/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/imperialdemudanzasytransporte?igsh=a3E5OGJsY3d3NTR4" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@imperial.de.mudan?_r=1&_t=ZS-94p88LyYHeH" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h4>Métodos de Pago</h4>
+                    <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-money-bill"></i> Efectivo</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-mobile-alt"></i> PSE</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-university"></i> Transferencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2025 Imperial de Mudanzas y Transporte. Todos los derechos reservados.</p>
+                <p style="display: flex; align-items: center; gap: 5px;"><i class="fas fa-clock" style="color: #ffd700;"></i> Atención: 24/7</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- SCRIPTS -->
+    <script>
+        function abrirMenu() { document.getElementById('miMenu').classList.toggle('active'); }
+        function abrirSubmenu() {
+            var submenu = document.getElementById('submenuServicios');
+            var icono = document.getElementById('iconoSubmenu');
+            submenu.classList.toggle('show');
+            if (submenu.classList.contains('show')) { icono.style.transform = 'rotate(180deg)'; } else { icono.style.transform = 'rotate(0deg)'; }
+        }
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.main-nav')) {
+                document.getElementById('miMenu').classList.remove('active');
+                document.getElementById('submenuServicios').classList.remove('show');
+                document.getElementById('iconoSubmenu').style.transform = 'rotate(0deg)';
+            }
+        });
+
+        window.onscroll = function() {
+            const scrollBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { scrollBtn.classList.add('show'); } else { scrollBtn.classList.remove('show'); }
+        };
+        document.getElementById('scrollTopBtn')?.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        // Guardar datos para la página de gracias
+        document.getElementById('cotizacionForm').addEventListener('submit', function() {
+            localStorage.setItem('cliente_nombre', document.getElementById('nombre').value);
+            localStorage.setItem('cliente_email', document.getElementById('email').value);
+        });
+    </script>
+
+    <!-- VALIDACIÓN JS -->
+    <script src="js/validacion.js"></script>
+
+    <!-- DATOS ESTRUCTURADOS JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MovingCompany",
+        "name": "Imperial de Mudanzas",
+        "image": "https://tu-proyecto.web.app/images/logo.png",
+        "url": "https://tu-proyecto.web.app/",
+        "telephone": "+573045253625",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cl. 189a #2-29",
+            "addressLocality": "Bogotá",
+            "addressRegion": "Bogotá D.C.",
+            "postalCode": "111156",
+            "addressCountry": "CO"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 4.766326,
+            "longitude": -74.022786
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "08:00",
+                "closes": "12:00"
+            }
+        ],
+        "priceRange": "$$",
+        "description": "Mudanzas en Bogotá y toda Colombia. Más de 10 años de experiencia. Servicio estándar, confort y premium.",
+        "areaServed": ["Bogotá", "Medellín", "Cali", "Cartagena", "Villavicencio"]
+    }
+    </script>
+</body>
+</html>

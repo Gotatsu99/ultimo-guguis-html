@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ======================================== -->
+    <!-- GOOGLE ANALYTICS -->
+    <!-- ======================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DJDTXFBBV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4DJDTXFBBV');
+    </script>
+
+    <!-- ======================================== -->
+    <!-- TÍTULO Y METADATOS SEO -->
+    <!-- ======================================== -->
+    <title>Paquetería Local y Mensajería | Imperial de Mudanzas</title>
+    <meta name="description" content="Servicio de paquetería local en Bogotá. Envíos rápidos, seguros y económicos para tus documentos y paquetes. Mensajería express con seguimiento.">
+    <meta name="keywords" content="paqueteria local, mensajeria bogotá, envio de paquetes, envio de documentos, domicilios, paqueteria express">
+    <meta name="author" content="Imperial de Mudanzas">
+    <meta name="robots" content="index, follow">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-proyecto.web.app/servicios/paqueteria-local.html">
+    <meta property="og:title" content="Paquetería Local y Mensajería | Imperial de Mudanzas">
+    <meta property="og:description" content="Envíos rápidos, seguros y económicos para tus documentos y paquetes en Bogotá.">
+    <meta property="og:image" content="https://tu-proyecto.web.app/images/og-paqueteria-local.jpg">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Imperial de Mudanzas">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1a237e">
+    <meta name="theme-color" content="#1a237e">
+    
+    <!-- ESTILOS Y FUENTES -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ESTILOS ESPECÍFICOS -->
+    <style>
+        .service-detail-page { padding-top: 120px; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); min-height: 100vh; }
+        .service-detail-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        .service-detail-header { text-align: center; margin-bottom: 50px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-bottom: 5px solid #1976D2; }
+        .service-detail-header h1 { color: #0D47A1; font-size: 3rem; margin-bottom: 20px; }
+        .service-detail-header h1 i { color: #1976D2; margin-right: 15px; }
+        .service-badge { background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%); color: white; padding: 10px 25px; border-radius: 30px; display: inline-block; font-weight: 600; font-size: 1.1rem; margin-bottom: 20px; }
+        .service-price-tag { background: #e3f2fd; color: #0D47A1; padding: 15px 30px; border-radius: 50px; display: inline-block; font-size: 1.3rem; font-weight: 600; margin: 20px 0; border: 1px solid #90CAF9; }
+        .service-price-tag i { color: #1976D2; margin-right: 10px; }
+        
+        .service-content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        .service-info h2 { color: #0D47A1; margin-bottom: 30px; font-size: 2rem; border-bottom: 3px solid #1976D2; padding-bottom: 10px; }
+        
+        .feature-list { list-style: none; padding: 0; }
+        .feature-list li { padding: 15px 0; border-bottom: 1px solid #eee; display: flex; align-items: flex-start; gap: 15px; font-size: 1.1rem; }
+        .feature-list li i { color: #1976D2; font-size: 1.3rem; width: 30px; margin-top: 2px; }
+        .feature-list li strong { color: #333; display: block; margin-bottom: 4px; }
+        .feature-list li p { color: #666; margin: 0; font-size: 0.95rem; line-height: 1.4; }
+        .feature-list li div { flex: 1; }
+        
+        .service-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 30px; }
+        .stat-item { text-align: center; padding: 20px; background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%); border-radius: 15px; color: white; }
+        .stat-item i { font-size: 2.5rem; margin-bottom: 10px; color: #ffd700; }
+        .stat-item .stat-number { font-size: 2rem; font-weight: 700; display: block; margin-bottom: 5px; }
+        .stat-item .stat-label { font-size: 1rem; opacity: 0.9; }
+        
+        .service-image { background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%); border-radius: 15px; padding: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .service-image img { width: 100%; border-radius: 15px; margin-bottom: 20px; border: 3px solid #1976D2; }
+        .service-image h3 { color: #0D47A1; margin-bottom: 20px; font-size: 1.5rem; }
+        .service-image ul { list-style: none; padding: 0; width: 100%; }
+        .service-image ul li { padding: 10px 0; display: flex; align-items: center; gap: 10px; border-bottom: 1px dashed #ccc; }
+        .service-image ul li i { font-size: 1rem; color: #4caf50; margin: 0; animation: none; }
+
+        /* ======================================== */
+        /* NUEVA SECCIÓN DE COBERTURA */
+        /* ======================================== */
+        .cobertura-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .cobertura-section h2 {
+            color: #0D47A1;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .cobertura-section > p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .zonas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .zona-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .zona-card:hover {
+            border-color: #1976D2;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(25, 118, 210, 0.1);
+        }
+
+        .zona-card i {
+            font-size: 2rem;
+            color: #1976D2;
+            margin-bottom: 10px;
+        }
+
+        .zona-card h4 {
+            color: #0D47A1;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .zona-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .zona-card ul li {
+            color: #666;
+            font-size: 0.9rem;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .zona-card ul li i {
+            font-size: 0.8rem;
+            color: #4CAF50;
+            margin: 0;
+        }
+
+        .cobertura-aviso {
+            background: #e3f2fd;
+            border-radius: 10px;
+            padding: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            color: #0D47A1;
+            font-size: 1rem;
+            margin-top: 20px;
+            border: 1px solid #90CAF9;
+        }
+
+        .cobertura-aviso i {
+            font-size: 1.5rem;
+        }
+        
+        /* ======================================== */
+        
+        .process-timeline { background: white; border-radius: 20px; padding: 40px; margin-bottom: 40px; }
+        .process-timeline h2 { color: #0D47A1; margin-bottom: 40px; text-align: center; font-size: 2rem; }
+        .timeline-steps { display: flex; justify-content: space-between; position: relative; margin: 50px 0; }
+        .timeline-steps::before { content: ''; position: absolute; top: 40px; left: 0; width: 100%; height: 4px; background: #e0e0e0; z-index: 1; }
+        .step { text-align: center; position: relative; z-index: 2; flex: 1; }
+        .step-circle { width: 80px; height: 80px; background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 1.8rem; font-weight: 700; border: 4px solid #ffd700; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .step.active .step-circle { background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%); color: #1a237e; border-color: #1a237e; }
+        .step h4 { color: #333; margin-bottom: 10px; font-size: 1.2rem; }
+        .step p { color: #666; font-size: 0.95rem; max-width: 200px; margin: 0 auto; }
+        
+        .included-services { background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%); border-radius: 20px; padding: 40px; color: white; margin-bottom: 40px; }
+        .included-services h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+        .included-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .included-item { text-align: center; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; transition: all 0.3s; }
+        .included-item:hover { background: rgba(255, 255, 255, 0.2); transform: translateY(-5px); }
+        .included-item i { font-size: 3rem; color: #ffd700; margin-bottom: 20px; }
+        .included-item h3 { margin-bottom: 15px; font-size: 1.3rem; }
+        .included-item p { opacity: 0.9; line-height: 1.6; }
+        
+        .faq-section { background: white; border-radius: 20px; padding: 40px; margin-top: 40px; }
+        .faq-section h2 { color: #0D47A1; text-align: center; margin-bottom: 40px; font-size: 2rem; }
+        .faq-item { border-bottom: 1px solid #eee; padding: 20px 0; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        .faq-question h3 { color: #333; font-size: 1.2rem; margin: 0; }
+        .faq-question i { color: #1976D2; transition: transform 0.3s; }
+        .faq-question.active i { transform: rotate(180deg); }
+        .faq-answer { display: none; padding: 20px 0 10px; color: #666; line-height: 1.6; }
+        .faq-answer.show { display: block; }
+        
+        .cta-section { text-align: center; background: white; border-radius: 20px; padding: 60px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .cta-section h2 { color: #0D47A1; font-size: 2.5rem; margin-bottom: 20px; }
+        .cta-section p { color: #666; font-size: 1.2rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .cta-primary { background: #25D366; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.2rem; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; }
+        .cta-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37,211,102,0.3); }
+        .cta-secondary { background: white; color: #0D47A1; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.2rem; display: inline-flex; align-items: center; gap: 10px; border: 2px solid #0D47A1; transition: all 0.3s; }
+        .cta-secondary:hover { background: #0D47A1; color: white; }
+
+        /* Estilos menú activo */
+        .nav-item.active > a { color: #ffd700 !important; }
+        .active-submenu { color: #ffd700 !important; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .service-content-grid { grid-template-columns: 1fr; }
+            .timeline-steps { flex-direction: column; gap: 30px; }
+            .timeline-steps::before { display: none; }
+            .cta-buttons { flex-direction: column; }
+            .service-detail-header h1 { font-size: 2rem; }
+            .service-stats { grid-template-columns: 1fr; }
+            .feature-list li { flex-direction: column; align-items: flex-start; gap: 8px; }
+            .feature-list li i { margin-top: 0; }
+            .cobertura-aviso { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- ======================================== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo" style="margin-right: 40px;">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Imperial de Mudanzas" 
+                         style="height: 85px; width: auto; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s; border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;"
+                         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 24px rgba(255,215,0,0.4)';"
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.3)';">
+                </a>
+            </div>
+                            
+            <button class="mobile-menu-btn" onclick="abrirMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="miMenu">
+                <li class="nav-item">
+                    <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                
+                <!-- Menú activo en Servicios -->
+                <li class="nav-item has-submenu active">
+                    <a href="javascript:void(0);" onclick="abrirSubmenu()">
+                        <i class="fas fa-boxes"></i> Servicios <i class="fas fa-chevron-down" id="iconoSubmenu"></i>
+                    </a>
+                    <ul class="submenu show" id="submenuServicios">
+                        <li><a href="mudanza-estandar.html"><i class="fas fa-home"></i> Mudanza Estándar</a></li>
+                        <li><a href="mudanza-confort.html"><i class="fas fa-couch"></i> Mudanza Confort</a></li>
+                        <li><a href="mudanza-premium.html"><i class="fas fa-crown"></i> Mudanza Premium</a></li>
+                        <li class="submenu-divider"></li>
+                        <li><a href="servicios-adicionales.html"><i class="fas fa-plus-circle"></i> Servicios Adicionales</a></li>
+                        <li><a href="transporte-vehiculos.html"><i class="fas fa-truck-moving"></i> Transporte de Vehículos</a></li>
+                        <li><a href="paqueteria-local.html" class="active-submenu"><i class="fas fa-city"></i> Servicio de paquetería local</a></li>
+                        <li><a href="remodelacion-interiores.html"><i class="fas fa-tools"></i> Servicio de remodelación de interiores</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="../nosotros.html"><i class="fas fa-building"></i> Nosotros</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="../testimonios.html"><i class="fas fa-comment-alt"></i> Testimonios</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../galeria.html"><i class="fas fa-images"></i> Galería</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="nav-contact">
+                <a href="tel:3045253625" class="contact-phone">
+                    <i class="fas fa-phone"></i>
+                    <div class="phone-text">
+                        <span class="phone-label">Llama ya</span>
+                        <span class="phone-number">3045253625</span>
+                    </div>
+                </a>
+                <a href="../index.html#contacto" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i> Cotizar
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="service-detail-page">
+        <div class="service-detail-container">
+            <!-- Header del Servicio -->
+            <div class="service-detail-header">
+                <div class="service-badge">
+                    <i class="fas fa-box"></i> MENSAJERÍA EXPRESS
+                </div>
+                <h1>
+                    <i class="fas fa-city"></i>
+                    Paquetería Local
+                </h1>
+                <p class="service-price-tag">
+                    <i class="fas fa-bolt"></i>
+                    Rápidos, seguros y económicos
+                </p>
+                <p style="color: #666; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                    Envío de documentos y paquetes dentro de la ciudad. Olvídate del tráfico y las filas; 
+                    nosotros llevamos tu envío directamente a su destino.
+                </p>
+            </div>
+            
+            <!-- Contenido Principal -->
+            <div class="service-content-grid">
+                <div class="service-info">
+                    <h2><i class="fas fa-clipboard-list"></i> ¿Qué incluye este servicio?</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>📄 Envío de documentos</strong>
+                                <p>Entrega segura de sobres, contratos y carpetas</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>📦 Paquetes y cajas</strong>
+                                <p>Transporte de mercancía ligera y cajas de hasta 20kg</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>⏱️ Entrega el mismo día</strong>
+                                <p>Servicio express para envíos urgentes (sujeto a horario)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>📱 Confirmación en tiempo real</strong>
+                                <p>Te avisamos vía WhatsApp cuando se entregue</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>🛡️ Cuidado garantizado</strong>
+                                <p>Tu paquete viaja seguro, protegido en todo momento</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="service-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-stopwatch"></i>
+                            <span class="stat-number">2-4 Horas</span>
+                            <span class="stat-label">tiempo estimado</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">entregas exitosas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-image">
+                    <!-- Puedes cambiar esta imagen si tienes una de paquetería -->
+                    <img src="../images/galeria/paqueteria-local.jpg" alt="Servicio de Paquetería Local">
+                    <h3>Ideal para:</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Envíos entre oficinas</li>
+                        <li><i class="fas fa-check"></i> Entrega de facturas o documentos</li>
+                        <li><i class="fas fa-check"></i> Olvidaste algo y necesitas enviarlo</li>
+                        <li><i class="fas fa-check"></i> Regalos y compras pequeñas</li>
+                        <li><i class="fas fa-check"></i> Trámites que requieren entrega física</li>
+                        <li><i class="fas fa-check"></i> Repuestos o insumos de última hora</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ======================================== -->
+            <!-- NUEVA SECCIÓN: COBERTURA -->
+            <!-- ======================================== -->
+            <div class="cobertura-section">
+                <h2><i class="fas fa-map-marked-alt"></i> Nuestra Cobertura en Bogotá D.C.</h2>
+                <p>Llegamos a las principales zonas de la ciudad. Consulta los sectores donde tenemos disponibilidad inmediata.</p>
+                
+                <div class="zonas-grid">
+                    <div class="zona-card">
+                        <i class="fas fa-compass"></i>
+                        <h4>Zona Norte</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Usaquén</li>
+                            <li><i class="fas fa-check"></i> Suba</li>
+                            <li><i class="fas fa-check"></i> Cedritos</li>
+                            <li><i class="fas fa-check"></i> Chapinero Alto</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="zona-card">
+                        <!-- CAMBIO AQUÍ: De 'fas fa-city' a 'far fa-building' -->
+                        <i class="far fa-building"></i>
+                        <h4>Zona Centro</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Chapinero</li>
+                            <li><i class="fas fa-check"></i> Teusaquillo</li>
+                            <li><i class="fas fa-check"></i> La Candelaria</li>
+                            <li><i class="fas fa-check"></i> Santa Fe</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="zona-card">
+                        <i class="fas fa-sun"></i>
+                        <h4>Zona Occidente</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Fontibón</li>
+                            <li><i class="fas fa-check"></i> Engativá</li>
+                            <li><i class="fas fa-check"></i> Modelia</li>
+                            <li><i class="fas fa-check"></i> Salitre</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="zona-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Zona Sur</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Kennedy</li>
+                            <li><i class="fas fa-check"></i> Bosa</li>
+                            <li><i class="fas fa-check"></i> Puente Aranda</li>
+                            <li><i class="fas fa-check"></i> Restrepo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cobertura-aviso">
+                    <i class="fas fa-info-circle"></i>
+                    <span>¿No ves tu barrio en la lista? <strong>Escríbenos</strong>, evaluamos tu caso y te confirmamos si tenemos cobertura en tu zona.</span>
+                </div>
+            </div>
+            
+            <!-- Proceso de Envío -->
+            <div class="process-timeline">
+                <h2><i class="fas fa-tasks"></i> ¿Cómo funciona?</h2>
+                <div class="timeline-steps">
+                    <div class="step active">
+                        <div class="step-circle">1</div>
+                        <h4>Contacto</h4>
+                        <p>Escríbenos por WhatsApp</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle">2</div>
+                        <h4>Cotización</h4>
+                        <p>Te damos el precio al instante</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle">3</div>
+                        <h4>Recogida</h4>
+                        <p>Pasamos por tu paquete</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle">4</div>
+                        <h4>Tránsito</h4>
+                        <p>Ruta directa y segura</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle">5</div>
+                        <h4>Entrega</h4>
+                        <p>Recibes confirmación</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicios Incluidos Detallados -->
+            <div class="included-services">
+                <h2><i class="fas fa-gift"></i> Todo lo que obtienes</h2>
+                <div class="included-grid">
+                    <div class="included-item">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Rapidez</h3>
+                        <p>Entregas ágiles para que no hagas esperar a nadie</p>
+                    </div>
+                    <div class="included-item">
+                        <i class="fas fa-lock"></i>
+                        <h3>Confidencialidad</h3>
+                        <p>Tus documentos y paquetes se manejan con total discreción</p>
+                    </div>
+                    <div class="included-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Cobertura</h3>
+                        <p>Llegamos a la mayoría de barrios y zonas de la ciudad</p>
+                    </div>
+                    <div class="included-item">
+                        <i class="fas fa-headset"></i>
+                        <h3>Soporte</h3>
+                        <p>Atención directa para resolver cualquier duda o cambio</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Preguntas Frecuentes -->
+            <div class="faq-section" style="margin-bottom: 30px !important;">
+                <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Cuál es el peso máximo para los paquetes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Para el servicio de paquetería express (en moto o carro), el límite recomendado es de 20 kg. 
+                        Si tu paquete es más grande o pesado, te ofrecemos una cotización con nuestros vehículos de mudanza.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿En cuánto tiempo llega mi paquete?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Depende de la distancia y la hora del día. En promedio, las entregas se realizan entre 2 y 4 horas 
+                        después de que recogemos el paquete. Si es urgente, cuéntanos y priorizamos tu envío.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Puedo enviar productos frágiles?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, pero debes informarlo al momento de cotizar. Aseguramos el paquete con material de protección 
+                        adicional si es necesario y manejamos la carga con el mayor cuidado.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Ofrecen servicio los fines de semana?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        El servicio de paquetería está sujeto a disponibilidad los sábados. No operamos los domingos. 
+                        Sin embargo, puedes escribirnos para verificar si hay cobertura en tu zona.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Llamado a la Acción -->
+            <div class="cta-section">
+                <h2>📦 ¿Necesitas enviar algo hoy mismo?</h2>
+                <p>Coticemos tu envío ahora. Escríbenos con los detalles y te damos el precio inmediatamente.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/573045253625?text=Hola%21%20Necesito%20cotizar%20un%20env%C3%ADo%20por%20paqueter%C3%ADa%20local.%0A*Origen*%3A%20%5Bbarrio%5D%0A*Destino*%3A%20%5Bbarrio%5D%0A*Tipo%20de%20paquete%3A*%20%5Bdocumento%20o%20caja%5D" 
+                       target="_blank" 
+                       class="cta-primary">
+                        <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+                    </a>
+                    <a href="../index.html#contacto" class="cta-secondary">
+                        <i class="fas fa-calendar-alt"></i> Formulario web
+                    </a>
+                </div>
+                <p style="margin-top: 30px; color: #999; font-size: 0.95rem;">
+                    <i class="fas fa-clock"></i> Respuesta en menos de 30 minutos
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ======================================== -->
+    <!-- FOOTER ACTUALIZADO -->
+    <!-- ======================================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none; margin-bottom: 20px;">
+                    <img src="../images/logo.png" alt="Imperial de Mudanzas" style="height: 70px; width: auto; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.3); border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;">
+                    <span style="color: white; font-weight: 700; font-size: 1.4rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); letter-spacing: 1px; background: linear-gradient(135deg, #fff 0%, #ffd700 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">IMPERIAL DE MUDANZAS</span>
+                </a>
+                <p>Más de 10 años de experiencia en el sector</p>
+                <div style="margin-top: 20px;">
+                    <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i class="fas fa-phone" style="color: #ffd700;"></i> <span>3045253625</span></p>
+                    <p style="display: flex; align-items: center; gap: 10px; word-break: break-word;"><i class="fas fa-envelope" style="color: #ffd700; flex-shrink: 0;"></i><span style="font-size: 0.9rem;">Imperialdemudanzasytransporte@gmail.com</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="../nosotros.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="../testimonios.html"><i class="fas fa-chevron-right"></i> Testimonios</a></li>
+                    <li><a href="../galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="../contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="mudanza-estandar.html"><i class="fas fa-chevron-right"></i> Mudanza Estándar</a></li>
+                    <li><a href="mudanza-confort.html"><i class="fas fa-chevron-right"></i> Mudanza Confort</a></li>
+                    <li><a href="mudanza-premium.html"><i class="fas fa-chevron-right"></i> Mudanza Premium</a></li>
+                    <li><a href="servicios-adicionales.html"><i class="fas fa-chevron-right"></i> Servicios Adicionales</a></li>
+                    <li><a href="transporte-vehiculos.html"><i class="fas fa-chevron-right"></i> Transporte de Vehículos</a></li>
+                    <li><a href="paqueteria-local.html"><i class="fas fa-chevron-right"></i> Servicio de paquetería local</a></li>
+                    <li><a href="remodelacion-interiores.html"><i class="fas fa-chevron-right"></i> Servicio de remodelación de interiores</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/573045253625" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/18BxR83M6Z/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/imperialdemudanzasytransporte?igsh=a3E5OGJsY3d3NTR4" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@imperial.de.mudan?_r=1&_t=ZS-94p88LyYHeH" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h4>Métodos de Pago</h4>
+                    <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-money-bill"></i> Efectivo</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-mobile-alt"></i> PSE</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-university"></i> Transferencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2025 Imperial de Mudanzas y Transporte. Todos los derechos reservados.</p>
+                <p style="display: flex; align-items: center; gap: 5px;"><i class="fas fa-clock" style="color: #ffd700;"></i> Atención: 24/7</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Menú
+        function abrirMenu() { document.getElementById('miMenu').classList.toggle('active'); }
+        function abrirSubmenu() {
+            var submenu = document.getElementById('submenuServicios');
+            var icono = document.getElementById('iconoSubmenu');
+            submenu.classList.toggle('show');
+            if (submenu.classList.contains('show')) { icono.style.transform = 'rotate(180deg)'; } else { icono.style.transform = 'rotate(0deg)'; }
+        }
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.main-nav')) {
+                document.getElementById('miMenu').classList.remove('active');
+                document.getElementById('submenuServicios').classList.remove('show');
+                document.getElementById('iconoSubmenu').style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // Scroll Top
+        window.onscroll = function() {
+            const scrollBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { scrollBtn.classList.add('show'); } else { scrollBtn.classList.remove('show'); }
+        };
+        document.getElementById('scrollTopBtn')?.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        // Función para el FAQ
+        function toggleFAQ(element) {
+            element.classList.toggle('active');
+            const answer = element.nextElementSibling;
+            answer.classList.toggle('show');
+        }
+        
+        // Smooth scroll para los enlaces
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- DATOS ESTRUCTURADOS JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Servicio de Paquetería Local",
+        "description": "Envío de documentos y paquetes dentro de la ciudad. Servicio rápido, seguro y económico.",
+        "provider": {
+            "@type": "MovingCompany",
+            "name": "Imperial de Mudanzas",
+            "url": "https://tu-proyecto.web.app/",
+            "telephone": "+573045253625"
+        },
+        "areaServed": ["Bogotá"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Incluye",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Envío de documentos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paquetes y cajas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Entrega el mismo día" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Confirmación en tiempo real" } }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ======================================== -->
+    <!-- GOOGLE ANALYTICS -->
+    <!-- ======================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DJDTXFBBV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4DJDTXFBBV');
+    </script>
+
+    <!-- ======================================== -->
+    <!-- TÍTULO Y METADATOS SEO -->
+    <!-- ======================================== -->
+    <title>Galería de Trabajos | Imperial de Mudanzas - Flota y Mudanzas Residenciales</title>
+    <meta name="description" content="Galería de trabajos de Imperial de Mudanzas. Conoce nuestra flota de camiones y las mudanzas residenciales que hemos realizado en Bogotá y Colombia.">
+    <meta name="keywords" content="galería mudanzas, fotos mudanzas, camiones mudanza, mudanzas residenciales bogotá, trabajos mudanzas, imperial mudanzas fotos">
+    <meta name="author" content="Imperial de Mudanzas">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="es-co">
+    
+    <!-- ======================================== -->
+    <!-- OPEN GRAPH -->
+    <!-- ======================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-proyecto.web.app/galeria.html">
+    <meta property="og:title" content="Galería de Trabajos | Imperial de Mudanzas">
+    <meta property="og:description" content="Galería de nuestra flota de camiones y mudanzas residenciales realizadas.">
+    <meta property="og:image" content="https://tu-proyecto.web.app/images/og-galeria.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Imperial de Mudanzas">
+    
+    <!-- ======================================== -->
+    <!-- TWITTER CARDS -->
+    <!-- ======================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galería - Imperial de Mudanzas">
+    <meta name="twitter:description" content="Conoce nuestros trabajos realizados y flota de camiones.">
+    <meta name="twitter:image" content="https://tu-proyecto.web.app/images/twitter-galeria.jpg">
+    
+    <!-- ======================================== -->
+    <!-- FAVICON -->
+    <!-- ======================================== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1a237e">
+    <meta name="theme-color" content="#1a237e">
+    
+    <!-- ======================================== -->
+    <!-- ESTILOS Y FUENTES -->
+    <!-- ======================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ======================================== -->
+    <!-- ESTILOS ESPECÍFICOS -->
+    <!-- ======================================== -->
+    <style>
+        .galeria-page { padding-top: 120px; background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%); min-height: 100vh; }
+        .galeria-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        .galeria-header { text-align: center; margin-bottom: 40px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .galeria-header h1 { color: #1a237e; font-size: 2.5rem; margin-bottom: 15px; }
+        .galeria-header h1 i { color: #ffd700; margin-right: 15px; }
+        .galeria-header p { color: #666; font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+        
+        /* FILTROS */
+        .filtros-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; }
+        .btn-filtro { padding: 12px 30px; border: none; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s; background: white; color: #1a237e; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .btn-filtro:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(26,35,126,0.2); }
+        .btn-filtro.activo { background: #1a237e; color: white; }
+        .btn-filtro i { margin-right: 8px; }
+        
+        /* SECCIONES DE GALERÍA */
+        .seccion-galeria { margin-bottom: 60px; transition: all 0.3s; }
+        .seccion-titulo { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; }
+        .seccion-titulo i { font-size: 2.5rem; color: #ffd700; }
+        .seccion-titulo h2 { color: #1a237e; font-size: 2rem; margin: 0; }
+        .seccion-titulo p { color: #666; margin-left: auto; font-size: 0.9rem; background: #f0f0f0; padding: 5px 15px; border-radius: 20px; }
+        
+        /* Grid de imágenes */
+        .grid-galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+        .tarjeta-imagen { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .tarjeta-imagen:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(26,35,126,0.2); }
+        .contenedor-imagen { width: 100%; height: 200px; overflow: hidden; background: #f0f0f0; }
+        .contenedor-imagen img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+        .tarjeta-imagen:hover .contenedor-imagen img { transform: scale(1.1); }
+        .info-imagen { padding: 15px; }
+        .info-imagen h4 { color: #1a237e; margin-bottom: 5px; font-size: 1.1rem; }
+        .info-imagen p { color: #666; font-size: 0.9rem; margin: 0; }
+        .info-imagen .fecha { color: #ffd700; font-size: 0.8rem; margin-top: 5px; }
+        
+        /* PIE DE PÁGINA DE GALERÍA */
+        .galeria-footer { margin-top: 60px; text-align: center; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .galeria-footer h3 { color: #1a237e; font-size: 1.8rem; margin-bottom: 10px; }
+        .galeria-footer p { color: #666; margin-bottom: 25px; }
+        
+        .redes-sociales { display: flex; justify-content: center; gap: 20px; margin-bottom: 25px; }
+        .btn-red-social { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 1.5rem; transition: all 0.3s; }
+        .btn-red-social:hover { transform: translateY(-5px); }
+        .btn-facebook-footer { background: #1877f2; }
+        .btn-instagram-footer { background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5); }
+        
+        .btn-compartir { background: #ffd700; color: #1a237e; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; border: none; cursor: pointer; font-size: 1rem; }
+        .btn-compartir:hover { background: #ffb300; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255,215,0,0.3); }
+        
+        /* Estilos menú activo */
+        .nav-item.active > a { color: #ffd700 !important; }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) {
+            .grid-galeria { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 576px) {
+            .grid-galeria { grid-template-columns: 1fr; }
+            .seccion-titulo { flex-direction: column; text-align: center; gap: 5px; }
+            .seccion-titulo p { margin-left: 0; }
+            .galeria-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- ======================================== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo" style="margin-right: 40px;">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Imperial de Mudanzas" 
+                         style="height: 85px; width: auto; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s; border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;"
+                         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 24px rgba(255,215,0,0.4)';"
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.3)';">
+                </a>
+            </div>
+                            
+            <button class="mobile-menu-btn" onclick="abrirMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="miMenu">
+                <li class="nav-item">
+                    <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                
+                <li class="nav-item has-submenu">
+                    <a href="javascript:void(0);" onclick="abrirSubmenu()">
+                        <i class="fas fa-boxes"></i> Servicios <i class="fas fa-chevron-down" id="iconoSubmenu"></i>
+                    </a>
+                    <ul class="submenu" id="submenuServicios">
+                        <li><a href="servicios/mudanza-estandar.html"><i class="fas fa-home"></i> Mudanza Estándar</a></li>
+                        <li><a href="servicios/mudanza-confort.html"><i class="fas fa-couch"></i> Mudanza Confort</a></li>
+                        <li><a href="servicios/mudanza-premium.html"><i class="fas fa-crown"></i> Mudanza Premium</a></li>
+                        <li class="submenu-divider"></li>
+                        <li><a href="servicios/servicios-adicionales.html"><i class="fas fa-plus-circle"></i> Servicios Adicionales</a></li>
+                        <li><a href="servicios/transporte-vehiculos.html"><i class="fas fa-truck-moving"></i> Transporte de Vehículos</a></li>
+                        <li><a href="servicios/paqueteria-local.html"><i class="fas fa-city"></i> Servicio de paquetería local</a></li>
+                        <li><a href="servicios/remodelacion-interiores.html"><i class="fas fa-tools"></i> Servicio de remodelación de interiores</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="nosotros.html"><i class="fas fa-building"></i> Nosotros</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="testimonios.html"><i class="fas fa-comment-alt"></i> Testimonios</a>
+                </li>
+    
+                <li class="nav-item active">
+                    <a href="galeria.html"><i class="fas fa-images"></i> Galería</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="nav-contact">
+                <a href="tel:3045253625" class="contact-phone">
+                    <i class="fas fa-phone"></i>
+                    <div class="phone-text">
+                        <span class="phone-label">Llama ya</span>
+                        <span class="phone-number">3045253625</span>
+                    </div>
+                </a>
+                <a href="index.html#contacto" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i> Cotizar
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="galeria-page">
+        <div class="galeria-container">
+            
+            <!-- HEADER -->
+            <div class="galeria-header">
+                <h1>
+                    <i class="fas fa-images"></i>
+                    Galería Imperial
+                </h1>
+                <p>Conoce nuestra flota de camiones y las mudanzas residenciales que hemos realizado</p>
+            </div>
+            
+            <!-- FILTROS -->
+            <div class="filtros-container" id="filtros">
+                <button class="btn-filtro activo" onclick="filtrarGaleria('todas')">
+                    <i class="fas fa-th-large"></i> Todas
+                </button>
+                <button class="btn-filtro" onclick="filtrarGaleria('flota')">
+                    <i class="fas fa-truck"></i> Nuestra Flota
+                </button>
+                <button class="btn-filtro" onclick="filtrarGaleria('residencial')">
+                    <i class="fas fa-home"></i> Residenciales
+                </button>
+            </div>
+            
+            <!-- SECCIÓN 1: NUESTRA FLOTA -->
+            <div class="seccion-galeria" id="seccion-flota">
+                <div class="seccion-titulo">
+                    <i class="fas fa-truck-moving"></i>
+                    <h2>Nuestra Flota de Camiones</h2>
+                    <p>3 vehículos</p>
+                </div>
+                
+                <div class="grid-galeria">
+                    <!-- Camión 1 -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/flota/camion-1.jpeg" alt="Chevrolet NQR">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Chevrolet NQR</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> 2025</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Camión 2 -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/flota/camion-2.jpeg" alt="Foton FVR">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Foton FVR</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> 2025</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Camión 3 -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/flota/camion-3.jpeg" alt="Foton FRR">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Foton FRR</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECCIÓN 2: MUDANZAS RESIDENCIALES -->
+            <div class="seccion-galeria" id="seccion-residencial">
+                <div class="seccion-titulo">
+                    <i class="fas fa-home"></i>
+                    <h2>Mudanzas Residenciales</h2>
+                    <p>6 trabajos</p>
+                </div>
+                
+                <div class="grid-galeria">
+                    <!-- Casa Norte -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/residencial/casa-norte.jpeg" alt="Mudanza residencial en Casa Norte">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Casa Norte</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> Marzo 2025</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Apartamento Chapinero -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/residencial/apto-chapinero.jpeg" alt="Mudanza en apartamento Chapinero">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Apartamento Chapinero</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> Febrero 2025</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Casa Suba -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/residencial/casa-suba.jpeg" alt="Mudanza residencial en Suba">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Casa Suba</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> Enero 2025</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Apartamento Usaquén -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/residencial/apto-usaquen.jpeg" alt="Mudanza en apartamento Usaquén">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Apartamento Usaquén</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> Diciembre 2024</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Casa Teusaquillo -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/residencial/casa-teusaquillo.jpeg" alt="Mudanza residencial en Teusaquillo">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Casa Teusaquillo</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> Noviembre 2024</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Apartamento Fontibón -->
+                    <div class="tarjeta-imagen">
+                        <div class="contenedor-imagen">
+                            <img src="images/galeria/residencial/apto-fontibon.jpeg" alt="Mudanza en apartamento Fontibón">
+                        </div>
+                        <div class="info-imagen">
+                            <h4>Apartamento Fontibón</h4>
+                            <div class="fecha"><i class="fas fa-calendar-alt"></i> Octubre 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PIE DE PÁGINA DE GALERÍA -->
+            <div class="galeria-footer">
+                <h3><i class="fas fa-camera"></i> ¿Quieres ver más?</h3>
+                <p>Síguenos en nuestras redes sociales y comparte tus fotos con nosotros</p>
+                
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/share/18BxR83M6Z/" target="_blank" class="btn-red-social btn-facebook-footer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/imperialdemudanzasytransporte?igsh=a3E5OGJsY3d3NTR4" target="_blank" class="btn-red-social btn-instagram-footer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@imperial.de.mudan?_r=1&_t=ZS-94p88LyYHeH" target="_blank" class="btn-red-social" style="background: #000000;">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                
+                <!-- BOTÓN COMPARTIR CON OPCIONES -->
+                <div style="position: relative; display: inline-block;">
+                    <button onclick="mostrarOpcionesCompartir()" class="btn-compartir">
+                        <i class="fas fa-share-alt"></i> Compartir mi foto
+                    </button>
+                    <div id="opcionesCompartir" style="display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: white; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); margin-bottom: 10px; min-width: 200px; z-index: 100;">
+                        <a href="javascript:void(0);" onclick="compartirWhatsApp()" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">
+                            <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2rem;"></i> WhatsApp
+                        </a>
+                        <a href="javascript:void(0);" onclick="compartirFacebook()" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">
+                            <i class="fab fa-facebook" style="color: #1877f2; font-size: 1.2rem;"></i> Facebook
+                        </a>
+                        <a href="javascript:void(0);" onclick="compartirEmail()" style="display: flex; align-items: center; gap: 10px; padding: 12px 15px; text-decoration: none; color: #333;">
+                            <i class="fas fa-envelope" style="color: #ffd700; font-size: 1.2rem;"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ======================================== -->
+    <!-- FOOTER ACTUALIZADO -->
+    <!-- ======================================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none; margin-bottom: 20px;">
+                    <img src="images/logo.png" alt="Imperial de Mudanzas" style="height: 70px; width: auto; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.3); border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;">
+                    <span style="color: white; font-weight: 700; font-size: 1.4rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); letter-spacing: 1px; background: linear-gradient(135deg, #fff 0%, #ffd700 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">IMPERIAL DE MUDANZAS</span>
+                </a>
+                <p>Más de 10 años de experiencia en el sector</p>
+                <div style="margin-top: 20px;">
+                    <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i class="fas fa-phone" style="color: #ffd700;"></i> <span>3045253625</span></p>
+                    <p style="display: flex; align-items: center; gap: 10px; word-break: break-word;"><i class="fas fa-envelope" style="color: #ffd700; flex-shrink: 0;"></i><span style="font-size: 0.9rem;">Imperialdemudanzasytransporte@gmail.com</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="testimonios.html"><i class="fas fa-chevron-right"></i> Testimonios</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="servicios/mudanza-estandar.html"><i class="fas fa-chevron-right"></i> Mudanza Estándar</a></li>
+                    <li><a href="servicios/mudanza-confort.html"><i class="fas fa-chevron-right"></i> Mudanza Confort</a></li>
+                    <li><a href="servicios/mudanza-premium.html"><i class="fas fa-chevron-right"></i> Mudanza Premium</a></li>
+                    <li><a href="servicios/servicios-adicionales.html"><i class="fas fa-chevron-right"></i> Servicios Adicionales</a></li>
+                    <li><a href="servicios/transporte-vehiculos.html"><i class="fas fa-chevron-right"></i> Transporte de Vehículos</a></li>
+                    <li><a href="servicios/paqueteria-local.html"><i class="fas fa-chevron-right"></i> Servicio de paquetería local</a></li>
+                    <li><a href="servicios/remodelacion-interiores.html"><i class="fas fa-chevron-right"></i> Servicio de remodelación de interiores</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/573045253625" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/18BxR83M6Z/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/imperialdemudanzasytransporte?igsh=a3E5OGJsY3d3NTR4" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@imperial.de.mudan?_r=1&_t=ZS-94p88LyYHeH" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h4>Métodos de Pago</h4>
+                    <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-money-bill"></i> Efectivo</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-mobile-alt"></i> PSE</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-university"></i> Transferencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2025 Imperial de Mudanzas y Transporte. Todos los derechos reservados.</p>
+                <p style="display: flex; align-items: center; gap: 5px;"><i class="fas fa-clock" style="color: #ffd700;"></i> Atención: 24/7</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Menú
+        function abrirMenu() { document.getElementById('miMenu').classList.toggle('active'); }
+        function abrirSubmenu() {
+            var submenu = document.getElementById('submenuServicios');
+            var icono = document.getElementById('iconoSubmenu');
+            submenu.classList.toggle('show');
+            if (submenu.classList.contains('show')) { icono.style.transform = 'rotate(180deg)'; } else { icono.style.transform = 'rotate(0deg)'; }
+        }
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.main-nav')) {
+                document.getElementById('miMenu').classList.remove('active');
+                document.getElementById('submenuServicios').classList.remove('show');
+                document.getElementById('iconoSubmenu').style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // Scroll Top
+        window.onscroll = function() {
+            const scrollBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { scrollBtn.classList.add('show'); } else { scrollBtn.classList.remove('show'); }
+        };
+        document.getElementById('scrollTopBtn')?.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        // Función para filtrar la galería
+        function filtrarGaleria(filtro) {
+            const seccionFlota = document.getElementById('seccion-flota');
+            const seccionResidencial = document.getElementById('seccion-residencial');
+            const botones = document.querySelectorAll('.btn-filtro');
+            
+            // Actualizar clase activa en botones
+            botones.forEach(btn => {
+                btn.classList.remove('activo');
+            });
+            event.target.classList.add('activo');
+            
+            // Mostrar/ocultar según filtro
+            if (filtro === 'todas') {
+                seccionFlota.style.display = 'block';
+                seccionResidencial.style.display = 'block';
+            } else if (filtro === 'flota') {
+                seccionFlota.style.display = 'block';
+                seccionResidencial.style.display = 'none';
+            } else if (filtro === 'residencial') {
+                seccionFlota.style.display = 'none';
+                seccionResidencial.style.display = 'block';
+            }
+        }
+
+        // Compartir
+        function mostrarOpcionesCompartir() {
+            const opciones = document.getElementById('opcionesCompartir');
+            if (opciones.style.display === 'none' || opciones.style.display === '') {
+                opciones.style.display = 'block';
+            } else {
+                opciones.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+            const opciones = document.getElementById('opcionesCompartir');
+            const boton = event.target.closest('.btn-compartir');
+            if (!boton && opciones) {
+                opciones.style.display = 'none';
+            }
+        });
+
+        function compartirWhatsApp() {
+            const mensaje = encodeURIComponent("¡Hola! Quiero compartir mi experiencia con Imperial de Mudanzas. Hicieron un excelente trabajo en mi mudanza. 🚚✨");
+            window.open(`https://wa.me/573045253625?text=${mensaje}`, '_blank');
+            document.getElementById('opcionesCompartir').style.display = 'none';
+        }
+
+        function compartirFacebook() {
+            const url = encodeURIComponent('https://tu-proyecto.web.app/galeria.html');
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+            document.getElementById('opcionesCompartir').style.display = 'none';
+        }
+
+        function compartirEmail() {
+            const asunto = encodeURIComponent("Mi experiencia con Imperial de Mudanzas");
+            const cuerpo = encodeURIComponent("Hola,\n\nQuiero compartir mi experiencia con Imperial de Mudanzas. Han hecho un excelente trabajo en mi mudanza.\n\nPueden ver más en: https://tu-proyecto.web.app/galeria.html");
+            window.location.href = `mailto:Imperialdemudanzasytransporte@gmail.com?subject=${asunto}&body=${cuerpo}`;
+            document.getElementById('opcionesCompartir').style.display = 'none';
+        }
+    </script>
+
+    <!-- DATOS ESTRUCTURADOS JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Galería de Imperial de Mudanzas",
+        "description": "Galería de nuestra flota de camiones y mudanzas residenciales realizadas en Bogotá y Colombia.",
+        "url": "https://tu-proyecto.web.app/galeria.html",
+        "image": [
+            { "@type": "ImageObject", "contentUrl": "https://tu-proyecto.web.app/images/galeria/flota/camion-1.jpeg", "name": "Chevrolet NQR" },
+            { "@type": "ImageObject", "contentUrl": "https://tu-proyecto.web.app/images/galeria/flota/camion-2.jpeg", "name": "Foton FVR" },
+            { "@type": "ImageObject", "contentUrl": "https://tu-proyecto.web.app/images/galeria/flota/camion-3.jpeg", "name": "Foton FRR" }
+        ]
+    }
+    </script>
+</body>
+</html>

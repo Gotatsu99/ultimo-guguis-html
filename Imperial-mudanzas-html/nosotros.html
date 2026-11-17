@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ======================================== -->
+    <!-- GOOGLE ANALYTICS -->
+    <!-- ======================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DJDTXFBBV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4DJDTXFBBV');
+    </script>
+
+    <!-- ======================================== -->
+    <!-- TÍTULO Y METADATOS SEO -->
+    <!-- ======================================== -->
+    <title>Sobre Nosotros | Imperial de Mudanzas - Más de 10 años de experiencia</title>
+    <meta name="description" content="Conoce la historia de Imperial de Mudanzas. Más de una década ofreciendo mudanzas seguras en Bogotá, Medellín, Cali y toda Colombia. Misión, visión y nuestro equipo profesional.">
+    <meta name="keywords" content="sobre nosotros, historia de mudanzas, equipo de mudanzas, misión mudanzas, visión mudanzas, valores empresa mudanzas, imperial de mudanzas">
+    <meta name="author" content="Imperial de Mudanzas">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="es-co">
+    
+    <!-- ======================================== -->
+    <!-- OPEN GRAPH -->
+    <!-- ======================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-proyecto.web.app/nosotros.html">
+    <meta property="og:title" content="Sobre Nosotros | Imperial de Mudanzas">
+    <meta property="og:description" content="Conoce nuestra historia, equipo y valores. Más de 10 años de experiencia en mudanzas en Colombia.">
+    <meta property="og:image" content="https://tu-proyecto.web.app/images/og-nosotros.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Imperial de Mudanzas">
+    
+    <!-- ======================================== -->
+    <!-- TWITTER CARDS -->
+    <!-- ======================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobre Nosotros - Imperial de Mudanzas">
+    <meta name="twitter:description" content="Conoce la historia y el equipo detrás de Imperial de Mudanzas.">
+    <meta name="twitter:image" content="https://tu-proyecto.web.app/images/twitter-nosotros.jpg">
+    
+    <!-- ======================================== -->
+    <!-- FAVICON -->
+    <!-- ======================================== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1a237e">
+    <meta name="theme-color" content="#1a237e">
+    
+    <!-- ======================================== -->
+    <!-- ESTILOS Y FUENTES -->
+    <!-- ======================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ======================================== -->
+    <!-- ESTILOS ESPECÍFICOS -->
+    <!-- ======================================== -->
+    <style>
+        .about-page { padding-top: 120px; background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%); min-height: 100vh; }
+        .about-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* SECCIÓN 1: NUESTRA HISTORIA */
+        .history-section { background: white; border-radius: 30px; padding: 60px; margin-bottom: 50px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; overflow: hidden; }
+        .history-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, #1a237e, #ffd700, #1a237e); }
+        .history-header { text-align: center; margin-bottom: 50px; }
+        .history-header h1 { color: #1a237e; font-size: 3rem; margin-bottom: 20px; position: relative; display: inline-block; }
+        .history-header h1::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #ffd700; border-radius: 2px; }
+        .history-header h1 i { color: #ffd700; margin-right: 15px; }
+        .history-subtitle { color: #666; font-size: 1.2rem; max-width: 700px; margin: 0 auto; font-style: italic; }
+        
+        .history-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .history-content { padding-right: 30px; }
+        .history-content p { color: #555; font-size: 1.2rem; line-height: 1.8; margin-bottom: 25px; text-align: justify; }
+        .history-content .highlight { color: #1a237e; font-weight: 700; font-size: 1.3rem; border-left: 4px solid #ffd700; padding-left: 20px; margin: 30px 0; font-style: italic; }
+        
+        .history-stats { display: flex; gap: 30px; margin-top: 30px; }
+        .stat-box { flex: 1; text-align: center; padding: 20px; background: linear-gradient(135deg, #1a237e 0%, #283593 100%); border-radius: 15px; color: white; transition: transform 0.3s; }
+        .stat-box:hover { transform: translateY(-10px); }
+        .stat-box i { font-size: 2.5rem; color: #ffd700; margin-bottom: 15px; }
+        .stat-box .stat-number { font-size: 2.5rem; font-weight: 700; display: block; margin-bottom: 5px; }
+        .stat-box .stat-label { font-size: 1rem; opacity: 0.9; }
+        
+        .history-timeline { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 40px; border-radius: 20px; position: relative; }
+        .timeline-title { color: #1a237e; font-size: 1.8rem; margin-bottom: 30px; text-align: center; }
+        .timeline-item { display: flex; gap: 20px; margin-bottom: 30px; position: relative; }
+        .timeline-year { min-width: 100px; background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%); color: #1a237e; font-weight: 700; font-size: 1.3rem; padding: 10px; border-radius: 10px; text-align: center; height: fit-content; }
+        .timeline-content { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); flex: 1; }
+        .timeline-content h4 { color: #1a237e; margin-bottom: 10px; font-size: 1.2rem; }
+        .timeline-content p { color: #666; margin: 0; font-size: 1rem; }
+        .timeline-content i { color: #ffd700; margin-right: 10px; }
+        
+        /* SECCIÓN 2: MISIÓN, VISIÓN Y VALORES */
+        .mission-section { background: white; border-radius: 30px; padding: 60px; margin-bottom: 50px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; overflow: hidden; }
+        .mission-section::before { content: ''; position: absolute; top: 0; right: 0; width: 150px; height: 150px; background: linear-gradient(135deg, rgba(255,215,0,0.1) 0%, rgba(26,35,126,0.1) 100%); border-radius: 50%; transform: translate(50px, -50px); }
+        .mission-header { text-align: center; margin-bottom: 50px; }
+        .mission-header h2 { color: #1a237e; font-size: 2.5rem; margin-bottom: 20px; position: relative; display: inline-block; }
+        .mission-header h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #ffd700; border-radius: 2px; }
+        .mission-header h2 i { color: #ffd700; margin-right: 15px; }
+        .mission-subtitle { color: #666; font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+        .mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .mission-card { background: #f8f9fa; border-radius: 20px; padding: 40px 30px; transition: all 0.3s; position: relative; overflow: hidden; border: 1px solid #e0e0e0; }
+        .mission-card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(26, 35, 126, 0.15); border-color: #ffd700; }
+        .mission-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, #1a237e, #ffd700, #1a237e); opacity: 0; transition: opacity 0.3s; }
+        .mission-card:hover::before { opacity: 1; }
+        .card-icon { width: 80px; height: 80px; background: linear-gradient(135deg, #1a237e 0%, #283593 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; border: 3px solid #ffd700; transition: all 0.3s; }
+        .mission-card:hover .card-icon { transform: rotate(360deg) scale(1.1); }
+        .card-icon i { font-size: 2.5rem; color: #ffd700; }
+        .mission-card h3 { color: #1a237e; font-size: 1.8rem; margin-bottom: 20px; text-align: center; font-weight: 700; }
+        .mission-card p { color: #666; line-height: 1.8; text-align: center; font-size: 1rem; }
+        
+        .values-list { list-style: none; padding: 0; margin: 0; }
+        .values-list li { display: flex; align-items: flex-start; gap: 15px; padding: 12px 0; border-bottom: 1px solid #e0e0e0; }
+        .values-list li:last-child { border-bottom: none; }
+        .values-list li i { color: #ffd700; font-size: 1.2rem; margin-top: 3px; flex-shrink: 0; }
+        .values-list li strong { color: #1a237e; display: block; margin-bottom: 5px; font-size: 1.1rem; }
+        .values-list li p { color: #666; font-size: 0.95rem; line-height: 1.5; text-align: left; margin: 0; }
+        .card-footer { margin-top: 25px; text-align: right; color: #ffd700; font-size: 1.5rem; opacity: 0.5; }
+        
+        /* SECCIÓN 3: NUESTRO EQUIPO */
+        .team-section { background: white; border-radius: 30px; padding: 60px; margin-bottom: 50px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; overflow: hidden; }
+        .team-header { text-align: center; margin-bottom: 50px; }
+        .team-header h2 { color: #1a237e; font-size: 2.5rem; margin-bottom: 20px; position: relative; display: inline-block; }
+        .team-header h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #ffd700; border-radius: 2px; }
+        .team-header h2 i { color: #ffd700; margin-right: 15px; }
+        .team-subtitle { color: #666; font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+        .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px; }
+        .team-member { text-align: center; transition: all 0.3s; }
+        .team-member:hover { transform: translateY(-15px); }
+        .member-photo { width: 200px; height: 200px; margin: 0 auto 25px; border-radius: 50%; background: linear-gradient(135deg, #1a237e 0%, #283593 100%); border: 4px solid #ffd700; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: all 0.3s; }
+        .team-member:hover .member-photo { border-color: #ffffff; box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4); }
+        .member-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+        .team-member:hover .member-photo img { transform: scale(1.1); }
+        .photo-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1a237e 0%, #283593 100%); color: #ffd700; font-size: 4rem; }
+        .member-info h3 { color: #1a237e; font-size: 1.5rem; margin-bottom: 5px; font-weight: 700; }
+        .member-role { color: #ffd700; font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; background: linear-gradient(135deg, #1a237e 0%, #283593 100%); display: inline-block; padding: 5px 20px; border-radius: 30px; color: white; }
+        .member-description { color: #666; line-height: 1.6; font-size: 0.95rem; max-width: 250px; margin: 0 auto; }
+        
+        /* SECCIÓN 4: UBICACIÓN Y HORARIOS */
+        .location-section { background: white; border-radius: 30px; padding: 60px; margin-bottom: 50px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; overflow: hidden; }
+        .location-header { text-align: center; margin-bottom: 50px; }
+        .location-header h2 { color: #1a237e; font-size: 2.5rem; margin-bottom: 20px; position: relative; display: inline-block; }
+        .location-header h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #ffd700; border-radius: 2px; }
+        .location-header h2 i { color: #ffd700; margin-right: 15px; }
+        .location-subtitle { color: #666; font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+        .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .info-card, .map-card { background: #f8f9fa; border-radius: 20px; padding: 35px; transition: all 0.3s; border: 1px solid #e0e0e0; height: 100%; }
+        .info-card:hover, .map-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(26, 35, 126, 0.1); border-color: #ffd700; }
+        .info-card h3, .map-card h3 { color: #1a237e; font-size: 1.8rem; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #ffd700; padding-bottom: 15px; }
+        .info-card h3 i, .map-card h3 i { color: #ffd700; }
+        .info-item { display: flex; gap: 15px; margin-bottom: 25px; padding: 15px; background: white; border-radius: 15px; transition: all 0.3s; }
+        .info-item:hover { transform: translateX(5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .info-item i { font-size: 1.5rem; color: #ffd700; min-width: 40px; text-align: center; padding-top: 5px; }
+        .info-item strong { color: #1a237e; display: block; margin-bottom: 5px; font-size: 1.1rem; }
+        .info-item p { color: #666; line-height: 1.6; margin: 0; }
+        .pending-badge { display: inline-block; background: #fff3cd; color: #856404; font-size: 0.8rem; padding: 3px 10px; border-radius: 20px; margin-top: 5px; }
+        .pending-badge i { font-size: 0.8rem; margin-right: 5px; }
+        .map-button { display: inline-block; background: linear-gradient(135deg, #1a237e 0%, #283593 100%); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; border: 2px solid #ffd700; }
+        .map-button:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(26, 35, 126, 0.3); background: linear-gradient(135deg, #283593 0%, #1a237e 100%); }
+        
+        /* RESPONSIVE */
+        .nav-item.active > a { color: #ffd700 !important; }
+        @media (max-width: 992px) {
+            .history-grid, .mission-grid, .team-grid, .location-grid { grid-template-columns: 1fr; gap: 30px; }
+            .history-content { padding-right: 0; }
+            .history-stats { flex-direction: column; }
+            .history-header h1, .mission-header h2, .team-header h2, .location-header h2 { font-size: 2rem; }
+            .team-grid { max-width: 600px; margin: 0 auto; }
+            .info-card h3, .map-card h3 { font-size: 1.5rem; }
+        }
+        @media (max-width: 768px) {
+            .history-section, .mission-section, .team-section, .location-section { padding: 40px 20px; }
+            .history-header h1, .mission-header h2, .team-header h2, .location-header h2 { font-size: 1.8rem; }
+            .timeline-item { flex-direction: column; gap: 10px; }
+            .values-list li { flex-direction: column; align-items: center; text-align: center; }
+            .member-photo { width: 150px; height: 150px; }
+            .location-section { padding: 30px 15px !important; }
+            .location-header h2 { font-size: 1.6rem !important; }
+            .location-subtitle { font-size: 0.95rem !important; padding: 0 10px !important; }
+            .location-grid { grid-template-columns: 1fr !important; gap: 20px !important; margin-top: 20px !important; }
+            .info-card, .map-card { padding: 20px !important; border-radius: 15px !important; }
+            .info-card h3, .map-card h3 { font-size: 1.3rem !important; margin-bottom: 15px !important; padding-bottom: 8px !important; }
+            .info-item { flex-direction: row !important; align-items: flex-start !important; padding: 12px !important; margin-bottom: 12px !important; gap: 10px !important; }
+            .info-item i { font-size: 1.2rem !important; min-width: 25px !important; margin-top: 2px !important; }
+            .info-item strong { font-size: 0.95rem !important; }
+            .info-item p { font-size: 0.85rem !important; word-break: break-word !important; line-height: 1.4 !important; }
+            .info-item p strong { font-size: 0.9rem !important; display: inline !important; }
+            .info-item span[style*="color: #666; font-size: 0.95rem;"] { font-size: 0.8rem !important; display: block !important; margin-top: 2px !important; }
+            .pending-badge { font-size: 0.65rem !important; padding: 2px 6px !important; margin-left: 0 !important; display: inline-block !important; }
+            .map-card iframe { height: 200px !important; border-radius: 10px !important; }
+            .map-card [style*="display: flex; gap: 10px;"] { flex-direction: column !important; gap: 8px !important; }
+            .map-button { width: 100% !important; padding: 12px !important; font-size: 0.9rem !important; justify-content: center !important; }
+            .map-button i { font-size: 1rem !important; }
+            .map-card p[style*="color: #999; font-size: 0.8rem;"] { font-size: 0.7rem !important; margin-top: 10px !important; }
+        }
+        @media (max-width: 480px) {
+            .info-item { padding: 10px !important; }
+            .info-item i { font-size: 1rem !important; min-width: 20px !important; }
+            .info-item p { font-size: 0.8rem !important; }
+            .map-card iframe { height: 180px !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- ======================================== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo" style="margin-right: 40px;">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Imperial de Mudanzas" 
+                         style="height: 85px; width: auto; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s; border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;"
+                         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 24px rgba(255,215,0,0.4)';"
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.3)';">
+                </a>
+            </div>
+                            
+            <button class="mobile-menu-btn" onclick="abrirMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="miMenu">
+                <li class="nav-item">
+                    <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                
+                <li class="nav-item has-submenu">
+                    <a href="javascript:void(0);" onclick="abrirSubmenu()">
+                        <i class="fas fa-boxes"></i> Servicios <i class="fas fa-chevron-down" id="iconoSubmenu"></i>
+                    </a>
+                    <ul class="submenu" id="submenuServicios">
+                        <li><a href="servicios/mudanza-estandar.html"><i class="fas fa-home"></i> Mudanza Estándar</a></li>
+                        <li><a href="servicios/mudanza-confort.html"><i class="fas fa-couch"></i> Mudanza Confort</a></li>
+                        <li><a href="servicios/mudanza-premium.html"><i class="fas fa-crown"></i> Mudanza Premium</a></li>
+                        <li class="submenu-divider"></li>
+                        <li><a href="servicios/servicios-adicionales.html"><i class="fas fa-plus-circle"></i> Servicios Adicionales</a></li>
+                        <li><a href="servicios/transporte-vehiculos.html"><i class="fas fa-truck-moving"></i> Transporte de Vehículos</a></li>
+                        <li><a href="servicios/paqueteria-local.html"><i class="fas fa-city"></i> Servicio de paquetería local</a></li>
+                        <li><a href="servicios/remodelacion-interiores.html"><i class="fas fa-tools"></i> Servicio de remodelación de interiores</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item active">
+                    <a href="nosotros.html"><i class="fas fa-building"></i> Nosotros</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="testimonios.html"><i class="fas fa-comment-alt"></i> Testimonios</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="galeria.html"><i class="fas fa-images"></i> Galería</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="nav-contact">
+                <a href="tel:3045253625" class="contact-phone">
+                    <i class="fas fa-phone"></i>
+                    <div class="phone-text">
+                        <span class="phone-label">Llama ya</span>
+                        <span class="phone-number">3045253625</span>
+                    </div>
+                </a>
+                <a href="index.html#contacto" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i> Cotizar
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="about-page">
+        <div class="about-container">
+            
+            <!-- SECCIÓN 1: NUESTRA HISTORIA -->
+            <section class="history-section">
+                <div class="history-header">
+                    <h1><i class="fas fa-history"></i> Nuestra Historia</h1>
+                    <p class="history-subtitle">Más de una década haciendo parte de los momentos más importantes de nuestros clientes</p>
+                </div>
+                
+                <div class="history-grid">
+                    <div class="history-content">
+                        <p><strong>En Imperial de Mudanzas y Transporte, la experiencia nos respalda.</strong> Con más de una década en el sector, hemos perfeccionado cada aspecto de nuestro servicio para garantizar traslados eficientes, seguros y sin complicaciones.</p>
+                        <p>Lo que comenzó como un pequeño emprendimiento familiar en Cali, hoy se ha convertido en una de las empresas de mudanzas más confiables del país, con presencia en las principales ciudades como Medellín, Bogotá, Cartagena y Villavicencio.</p>
+                        
+                        <div class="highlight">
+                            <i class="fas fa-quote-left" style="color: #ffd700; margin-right: 10px;"></i>
+                            No solo movemos cosas, movemos historias, sueños y proyectos de vida.
+                        </div>
+                        
+                        <p>A lo largo de estos años, hemos aprendido que cada mudanza es única, y merece un trato especial. Por eso, nos hemos especializado en ofrecer soluciones personalizadas que se adaptan a las necesidades específicas de cada cliente.</p>
+                        
+                        <div class="history-stats">
+                            <div class="stat-box">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="stat-number">+10</span>
+                                <span class="stat-label">Años de experiencia</span>
+                            </div>
+                            <div class="stat-box">
+                                <i class="fas fa-smile"></i>
+                                <span class="stat-number">+5,000</span>
+                                <span class="stat-label">Clientes satisfechos</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="history-timeline">
+                        <h3 class="timeline-title"><i class="fas fa-clock"></i> Línea de Tiempo</h3>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2015</div>
+                            <div class="timeline-content">
+                                <h4><i class="fas fa-flag"></i> Fundación</h4>
+                                <p>Iniciamos operaciones en Cali con un solo camión y muchas ganas de servir.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-content">
+                                <h4><i class="fas fa-map-marker-alt"></i> Expansión</h4>
+                                <p>Abrimos operaciones en Medellín y Bogotá, llegando a más familias.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-content">
+                                <h4><i class="fas fa-truck"></i> Flota moderna</h4>
+                                <p>Renovamos nuestra flota con vehículos equipados y monitoreados.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-content">
+                                <h4><i class="fas fa-certificate"></i> Certificación</h4>
+                                <p>Obtenemos certificación en calidad y seguridad en mudanzas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-content">
+                                <h4><i class="fas fa-trophy"></i> +5,000 clientes</h4>
+                                <p>Alcanzamos la meta de 5,000 familias que confiaron en nosotros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SECCIÓN 2: MISIÓN, VISIÓN Y VALORES -->
+            <section class="mission-section">
+                <div class="mission-header">
+                    <h2><i class="fas fa-bullseye"></i> Misión, Visión y Valores</h2>
+                    <p class="mission-subtitle">La filosofía que guía cada una de nuestras mudanzas</p>
+                </div>
+                
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <div class="card-icon"><i class="fas fa-flag"></i></div>
+                        <h3>Misión</h3>
+                        <p>Ofrecer servicios de mudanza y transporte con los más altos estándares de calidad, seguridad y confianza, superando las expectativas de nuestros clientes y contribuyendo a la tranquilidad de sus procesos de traslado.</p>
+                        <div class="card-footer"><i class="fas fa-quote-right"></i></div>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="card-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Visión</h3>
+                        <p>Ser la empresa líder en el sector de mudanzas y transporte en Colombia, reconocida por nuestra excelencia operativa, innovación constante y capacidad de adaptación a las necesidades cambiantes de nuestros clientes.</p>
+                        <div class="card-footer"><i class="fas fa-quote-right"></i></div>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="card-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Nuestros Valores</h3>
+                        <ul class="values-list">
+                            <li><i class="fas fa-check-circle"></i><div><strong>Confianza</strong><p>Construimos relaciones duraderas basadas en la transparencia</p></div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>Seguridad</strong><p>Tus pertenencias son tratadas como si fueran nuestras</p></div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>Puntualidad</strong><p>Respetamos tu tiempo y cumplimos nuestros compromisos</p></div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>Respeto</strong><p>Trato digno y amable a clientes, colaboradores y proveedores</p></div></li>
+                            <li><i class="fas fa-check-circle"></i><div><strong>Excelencia</strong><p>Mejoramos continuamente para ofrecer el mejor servicio</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SECCIÓN 3: NUESTRO EQUIPO -->
+            <section class="team-section">
+                <div class="team-header">
+                    <h2><i class="fas fa-users"></i> Nuestro Equipo</h2>
+                    <p class="team-subtitle">Profesionales comprometidos con hacer de tu mudanza una experiencia segura y sin estrés</p>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Miembro 1 -->
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder"><i class="fas fa-user-tie"></i></div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Gersson Amaury Aguilera</h3>
+                            <div class="member-role">Fundador & Gerente General</div>
+                            <p class="member-description">
+                                <i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><br>
+                                Con más de 10 años liderando el sector de mudanzas. Visionario y comprometido con la excelencia, supervisa personalmente las operaciones más importantes y ha llevado a la empresa a expandirse a 5 ciudades del país.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 2 -->
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder"><i class="fas fa-user-tie"></i></div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Betty Lizbeth Coba</h3>
+                            <div class="member-role">Gerente Regional Bogotá</div>
+                            <p class="member-description">
+                                <i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star-half-alt" style="color: #ffd700;"></i><br>
+                                Con más de 4 años en la dirección regional Bogotá, Betty ha sido clave en la expansión y consolidación de la empresa en nuevas ciudades. Su liderazgo y cercanía con los clientes han fortalecido la confianza en la marca.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 3 -->
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder"><i class="fas fa-user-cog"></i></div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Brandon Andrés Bautista</h3>
+                            <div class="member-role">Ingeniero de Sistemas</div>
+                            <p class="member-description">
+                                <i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><i class="fas fa-star" style="color: #ffd700;"></i><br>
+                                Encargado de la transformación digital de la empresa. Desarrolla soluciones tecnológicas para optimizar procesos, garantizando a los clientes una experiencia digital moderna, segura y eficiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SECCIÓN 4: UBICACIÓN Y HORARIOS -->
+            <section class="location-section">
+                <div class="location-header">
+                    <h2><i class="fas fa-map-marker-alt"></i> Ubicación y Horarios</h2>
+                    <p class="location-subtitle">Visítanos, conoce nuestras instalaciones y resuelve todas tus dudas en persona</p>
+                </div>
+                
+                <div class="location-grid">
+                    <div class="location-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-store"></i> Oficina Principal</h3>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-map-pin"></i>
+                                <div>
+                                    <strong>Dirección:</strong>
+                                    <p><strong>Cl. 189a #2-29, Bogotá</strong><br>
+                                       <span style="color: #666; font-size: 0.95rem; display: block; margin-top: 5px;">
+                                           <i class="fas fa-location-dot" style="color: #ffd700;"></i> Ubicación exacta verificada en Google Maps
+                                       </span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Horario de Atención:</strong>
+                                    <p>🏢 Oficina: Lunes a Viernes 8:00 AM - 6:00 PM<br>📞 Telefónico: Sábados 8:00 AM - 12:00 PM<br>🚛 Mudanzas: 24/7 - 365 días del año</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <strong>Teléfonos:</strong>
+                                    <p>📱 Móvil: 3045253625<br>🏢 Oficina: (601) 234 5678
+                                        <span class="pending-badge"><i class="fas fa-clock"></i> Teléfono fijo pendiente</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Correo Electrónico:</strong>
+                                    <p>Imperialdemudanzasytransporte@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <div class="map-card">
+                            <h3><i class="fas fa-map"></i> Cómo llegar</h3>
+                            <div style="border-radius: 15px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.020993561534!2d-74.02278574841827!3d4.766326390543573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8f5dec2b4bc5%3A0x112043ed0637e194!2sCl.%20189a%20%232-29%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1772059735804!5m2!1ses!2sco" width="100%" height="350" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            
+                            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                                <a href="https://maps.google.com/?q=Cl.+189a+%232-29+Bogot%C3%A1" target="_blank" class="map-button"><i class="fas fa-directions"></i> Abrir en Google Maps</a>
+                                <a href="https://wa.me/573045253625" target="_blank" class="map-button" style="background: #25D366;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            </div>
+                            
+                            <p style="color: #999; font-size: 0.8rem; margin-top: 15px; text-align: center;">
+                                <i class="fas fa-check-circle" style="color: #4CAF50;"></i> Dirección verificada: Cl. 189a #2-29, Bogotá
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    
+    <!-- ======================================== -->
+    <!-- FOOTER ACTUALIZADO -->
+    <!-- ======================================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none; margin-bottom: 20px;">
+                    <img src="images/logo.png" alt="Imperial de Mudanzas" style="height: 70px; width: auto; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.3); border: 2px solid rgba(255,215,0,0.5); background: white; padding: 3px;">
+                    <span style="color: white; font-weight: 700; font-size: 1.4rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); letter-spacing: 1px; background: linear-gradient(135deg, #fff 0%, #ffd700 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">IMPERIAL DE MUDANZAS</span>
+                </a>
+                <p>Más de 10 años de experiencia en el sector</p>
+                <div style="margin-top: 20px;">
+                    <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i class="fas fa-phone" style="color: #ffd700;"></i> <span>3045253625</span></p>
+                    <p style="display: flex; align-items: center; gap: 10px; word-break: break-word;"><i class="fas fa-envelope" style="color: #ffd700; flex-shrink: 0;"></i><span style="font-size: 0.9rem;">Imperialdemudanzasytransporte@gmail.com</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="testimonios.html"><i class="fas fa-chevron-right"></i> Testimonios</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="servicios/mudanza-estandar.html"><i class="fas fa-chevron-right"></i> Mudanza Estándar</a></li>
+                    <li><a href="servicios/mudanza-confort.html"><i class="fas fa-chevron-right"></i> Mudanza Confort</a></li>
+                    <li><a href="servicios/mudanza-premium.html"><i class="fas fa-chevron-right"></i> Mudanza Premium</a></li>
+                    <li><a href="servicios/servicios-adicionales.html"><i class="fas fa-chevron-right"></i> Servicios Adicionales</a></li>
+                    <li><a href="servicios/transporte-vehiculos.html"><i class="fas fa-chevron-right"></i> Transporte de Vehículos</a></li>
+                    <li><a href="servicios/paqueteria-local.html"><i class="fas fa-chevron-right"></i> Servicio de paquetería local</a></li>
+                    <li><a href="servicios/remodelacion-interiores.html"><i class="fas fa-chevron-right"></i> Servicio de remodelación de interiores</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/573045253625" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/18BxR83M6Z/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/imperialdemudanzasytransporte?igsh=a3E5OGJsY3d3NTR4" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@imperial.de.mudan?_r=1&_t=ZS-94p88LyYHeH" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h4>Métodos de Pago</h4>
+                    <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-money-bill"></i> Efectivo</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-mobile-alt"></i> PSE</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 20px;"><i class="fas fa-university"></i> Transferencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p>&copy; 2025 Imperial de Mudanzas y Transporte. Todos los derechos reservados.</p>
+                <p style="display: flex; align-items: center; gap: 5px;"><i class="fas fa-clock" style="color: #ffd700;"></i> Atención: 24/7</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- SCRIPTS -->
+    <script>
+        function abrirMenu() { document.getElementById('miMenu').classList.toggle('active'); }
+        function abrirSubmenu() {
+            var submenu = document.getElementById('submenuServicios');
+            var icono = document.getElementById('iconoSubmenu');
+            submenu.classList.toggle('show');
+            if (submenu.classList.contains('show')) { icono.style.transform = 'rotate(180deg)'; } else { icono.style.transform = 'rotate(0deg)'; }
+        }
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.main-nav')) {
+                document.getElementById('miMenu').classList.remove('active');
+                document.getElementById('submenuServicios').classList.remove('show');
+                document.getElementById('iconoSubmenu').style.transform = 'rotate(0deg)';
+            }
+        });
+
+        window.onscroll = function() {
+            const scrollBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { scrollBtn.classList.add('show'); } else { scrollBtn.classList.remove('show'); }
+        };
+        document.getElementById('scrollTopBtn')?.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+
+    <!-- DATOS ESTRUCTURADOS JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Sobre Nosotros - Imperial de Mudanzas",
+        "description": "Conoce la historia, misión, visión y el equipo de Imperial de Mudanzas. Más de 10 años de experiencia en el sector.",
+        "url": "https://tu-proyecto.web.app/nosotros.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Imperial de Mudanzas",
+            "founder": {
+                "@type": "Person",
+                "name": "Gersson Amaury Aguilera"
+            },
+            "foundingDate": "2015",
+            "foundingLocation": "Cali, Colombia",
+            "areaServed": ["Bogotá", "Medellín", "Cali", "Cartagena", "Villavicencio"],
+            "numberOfEmployees": "3",
+            "slogan": "Experiencia que respalda, seguridad que garantiza"
+        }
+    }
+    </script>
+</body>
+</html>

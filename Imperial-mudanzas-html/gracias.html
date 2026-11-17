@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por contactarnos! - Imperial de Mudanzas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gracias-page {
+            padding-top: 150px;
+            min-height: 80vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gracias-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .check-icon {
+            font-size: 5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        h1 { color: #1a237e; margin-bottom: 20px; }
+        p { color: #666; font-size: 1.2rem; margin-bottom: 30px; }
+        .loading { display: flex; justify-content: center; gap: 10px; margin: 30px 0; }
+        .loading span { width: 12px; height: 12px; background: #ffd700; border-radius: 50%; animation: loading 1s infinite ease-in-out; }
+        .loading span:nth-child(2) { animation-delay: 0.2s; }
+        .loading span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes loading {
+            0%, 100% { transform: scale(0.5); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+        .btn-volver {
+            display: inline-block; padding: 12px 30px;
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s;
+        }
+        .btn-volver:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(26, 35, 126, 0.3); }
+        .nombre-cliente { color: #ffd700; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="gracias-page">
+        <div class="gracias-container">
+            <i class="fas fa-check-circle check-icon"></i>
+            <h1>¡Gracias por contactarnos<span id="saludo-nombre"></span>!</h1>
+            <p>Hemos recibido tu solicitud de cotización. Uno de nuestros asesores te responderá en menos de 24 horas.</p>
+            
+            <div class="loading">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <p style="font-size: 0.95rem; color: #999;">
+                Serás redirigido al inicio en <span id="contador">10</span> segundos...
+            </p>
+            
+            <!-- Importante: Enlace actualizado a index.html -->
+            <a href="index.html" class="btn-volver">Volver al inicio ahora</a>
+        </div>
+    </div>
+
+    <script>
+        // 1. Recuperar el nombre guardado en el index
+        document.addEventListener('DOMContentLoaded', function() {
+            const nombre = localStorage.getItem('cliente_nombre');
+            if (nombre) {
+                document.getElementById('saludo-nombre').textContent = ', ' + nombre;
+            }
+        });
+
+        // 2. Lógica del contador (Redirige a index.html)
+        let segundos = 10;
+        const contador = document.getElementById('contador');
+        
+        const intervalo = setInterval(() => {
+            segundos--;
+            contador.textContent = segundos;
+            
+            if (segundos <= 0) {
+                clearInterval(intervalo);
+                window.location.href = 'index.html'; // Cambiado de .php a .html
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
