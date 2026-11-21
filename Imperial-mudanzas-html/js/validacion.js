@@ -114,19 +114,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Loading al enviar
     form.addEventListener('submit', function(e) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-        
-        // ========================================
-        // EVENTO PARA GOOGLE ANALYTICS - FORMULARIO ENVIADO
-        // ========================================
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'form_submit', {
-                'event_category': 'engagement',
-                'event_label': 'formulario_cotizacion'
-            });
-        }
-    });
+
+    console.log('Formulario enviado mediante HTML tradicional');
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'form_submit', {
+            event_category: 'engagement',
+            event_label: 'formulario_cotizacion'
+        });
+    }
+
+});
 });
 
 // ========================================

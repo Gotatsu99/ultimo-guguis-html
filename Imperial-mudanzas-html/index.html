@@ -335,27 +335,27 @@
             
             <div class="contact-form">
                 <h3>Solicita tu Cotización</h3>
-                
                 <!-- FORMULARIO CONECTADO A WEB3FORMS -->
                 <form id="cotizacionForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
-                    
+
                     <input type="hidden" name="access_key" value="b41874ce-1295-43ac-9988-379f64a1fa70">
                     <input type="hidden" name="subject" value="Nueva cotización desde la página web (Inicio)">
-                    <!-- ⚠️ Cambia 'tu-proyecto.web.app' por tu dominio real de Firebase -->
-                    <input type="hidden" name="redirect" value="https://tu-proyecto.web.app/gracias.html">
+
+                    <!-- Redirección a la página de agradecimiento de Imperial -->
+                    <input type="hidden" name="redirect" value="https://imperial-de-mudanzas.web.app/gracias.html">
 
                     <div class="form-group">
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de contacto" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <select id="servicio" name="servicio" required>
                             <option value="">Selecciona el servicio</option>
@@ -364,11 +364,11 @@
                             <option value="premium">Mudanza Premium</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <textarea id="mensaje" name="mensaje" placeholder="Describe tus necesidades (origen, destino, fecha, etc.)" rows="4" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="submit-btn" disabled>
                         <i class="fas fa-paper-plane"></i> Enviar Solicitud
                     </button>
